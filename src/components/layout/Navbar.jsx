@@ -135,11 +135,10 @@ const Navbar = () => {
               className="h-8 sm:h-9 group-hover:scale-105 transition-transform duration-300"
             />
             <span
-              className={`text-xl sm:text-2xl font-bold ${
-                isScrolled
+              className={`text-xl sm:text-2xl font-bold ${isScrolled
                   ? 'text-[#22AD74] bg-gradient-to-r from-[#22AD74] to-[#22AD74]/70'
                   : 'text-white'
-              } text-transparent bg-clip-text group-hover:to-[#22AD74] transition-all duration-300`}
+                } text-transparent bg-clip-text group-hover:to-[#22AD74] transition-all duration-300`}
             >
               FLIP
             </span>
@@ -151,9 +150,8 @@ const Navbar = () => {
             href="https://roulette.gamacoin.ai/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${
-              isScrolled ? 'text-gray-600' : 'text-white'
-            } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
+            className={`${isScrolled ? 'text-gray-600' : 'text-white'
+              } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
           >
             Roulette
           </a>
@@ -166,9 +164,8 @@ const Navbar = () => {
             href="https://diceroll.gamacoin.ai/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${
-              isScrolled ? 'text-gray-600' : 'text-white'
-            } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
+            className={`${isScrolled ? 'text-gray-600' : 'text-white'
+              } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
           >
             Dice
           </a>
@@ -180,13 +177,12 @@ const Navbar = () => {
           <button
             onClick={() =>
               window.open(
-                'https://app.xspswap.finance/#/swap?outputCurrency=0x678adf7955d8f6dcaa9e2fcc1c5ba70bccc464e6',
+                'https://app.xspswap.finance/#/swap?inputCurrency=0x951857744785e80e2de051c32ee7b25f9c458c42&outputCurrency=0x3a170c7c987f55c84f28733bfa27962d8cdd5d3b',
                 '_blank'
               )
             }
-            className={`${
-              isScrolled ? 'text-gray-600' : 'text-white'
-            } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
+            className={`${isScrolled ? 'text-gray-600' : 'text-white'
+              } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
           >
             Get GAMA
           </button>
@@ -199,9 +195,8 @@ const Navbar = () => {
             href="https://gamacoin.ai/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${
-              isScrolled ? 'text-gray-600' : 'text-white'
-            } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
+            className={`${isScrolled ? 'text-gray-600' : 'text-white'
+              } hover:text-[#22AD74] transition-all duration-300 flex items-center gap-2 font-medium hover:-translate-y-0.5`}
           >
             Home
           </a>
@@ -215,13 +210,11 @@ const Navbar = () => {
               // Show "Switch To XDC" button when on unsupported network
               <button
                 onClick={handleSwitchToXDC}
-                className={`px-6 py-2 rounded-lg ${
-                  isScrolled
+                className={`px-6 py-2 rounded-lg ${isScrolled
                     ? 'bg-[#22AD74] text-white'
                     : 'bg-white text-[#22AD74] backdrop-blur-sm'
-                } border ${
-                  isScrolled ? 'border-[#22AD74]/20' : 'border-white/20'
-                } hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2 animate-pulse`}
+                  } border ${isScrolled ? 'border-[#22AD74]/20' : 'border-white/20'
+                  } hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2 animate-pulse`}
                 style={{
                   animation: 'pulse 2s infinite',
                   fontWeight: 'bold',
@@ -256,11 +249,10 @@ const Navbar = () => {
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className={`px-4 py-2 rounded-lg text-sm ${
-                    isScrolled
+                  className={`px-4 py-2 rounded-lg text-sm ${isScrolled
                       ? 'bg-[#22AD74]/5 border border-[#22AD74]/20'
                       : 'bg-[#22AD74]/20 backdrop-blur-sm border border-white/20'
-                  } hover:bg-[#22AD74]/10 transition-all duration-300 flex items-center gap-2`}
+                    } hover:bg-[#22AD74]/10 transition-all duration-300 flex items-center gap-2`}
                 >
                   <span
                     className={`font-medium ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}
@@ -270,11 +262,9 @@ const Navbar = () => {
                     {account.slice(-4)}
                   </span>
                   <svg
-                    className={`w-4 h-4 ${
-                      isScrolled ? 'text-gray-600' : 'text-gray-600'
-                    } transition-transform duration-300 ease-in-out ${
-                      dropdownOpen ? 'rotate-180' : ''
-                    }`}
+                    className={`w-4 h-4 ${isScrolled ? 'text-gray-600' : 'text-gray-600'
+                      } transition-transform duration-300 ease-in-out ${dropdownOpen ? 'rotate-180' : ''
+                      }`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -359,13 +349,11 @@ const Navbar = () => {
           ) : (
             <button
               onClick={handleConnectWallet}
-              className={`px-6 py-2 rounded-lg ${
-                isScrolled
+              className={`px-6 py-2 rounded-lg ${isScrolled
                   ? 'bg-[#22AD74] text-white'
                   : 'bg-white text-[#22AD74] backdrop-blur-sm'
-              } border ${
-                isScrolled ? 'border-[#22AD74]/20' : 'border-white/20'
-              } hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2`}
+                } border ${isScrolled ? 'border-[#22AD74]/20' : 'border-white/20'
+                } hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2`}
               disabled={isConnecting}
             >
               {isConnecting ? (
